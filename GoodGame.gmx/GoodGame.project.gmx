@@ -6,13 +6,19 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\spr_shloop</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+<<<<<<< HEAD
   <rooms name="rooms">
     <room>rooms\room04</room>
   </rooms>
+=======
+  <objects name="objects">
+    <object>objects\obj_shloop</object>
+  </objects>
+>>>>>>> origin/master
   <help>
     <rtf>help.rtf</rtf>
   </help>

@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>jump = false
+wjRight = false
+wjLeft = false
 </string>
           </argument>
         </arguments>
@@ -75,7 +77,7 @@ if hspeed &lt; -4.5 {
 
 if abs(hspeed) &gt; 0
    {
-   friction=0.15;
+   friction=0.25;
    }
 else
    {
@@ -91,7 +93,7 @@ if (place_meeting(x,y +1,obj_ground))
 }
 else
     {
-    gravity = .6;
+    gravity = .55;
 }
 
 if place_meeting(x,y + vspeed, obj_ground)
@@ -101,13 +103,62 @@ if place_meeting(x,y + vspeed, obj_ground)
 
 // Jumping
 
-if keyboard_check(vk_space)
+if keyboard_check(vk_space) or keyboard_check(vk_up)
     if place_meeting(x,y + 1, obj_ground)
     {
         {
-        vspeed = -10
+        vspeed = -13
     }
 }
+
+// Walls
+
+if place_meeting(x + hspeed,y,obj_wall)
+    {
+    hspeed = 0
+}
+
+
+// Wall Jump?
+
+if place_meeting(x - 3,y,obj_wall)
+    {
+    wjRight = true;
+}
+else
+    {
+    wjRight = false;
+}
+
+if place_meeting(x + 3,y,obj_wall)
+    {
+    wjLeft = true;
+}
+else
+    {
+    wjLeft = false;
+}
+
+// Wall Jump!
+
+if wjRight = true
+    {
+    if keyboard_check(vk_up) and keyboard_check(vk_right)
+        {
+        vspeed = -11
+        hspeed = 4
+    }
+}
+
+if wjLeft = true
+    {
+    if keyboard_check(vk_up) and keyboard_check(vk_left)
+        {
+        vspeed = -11
+        hspeed = -4
+    }
+}
+    
 </string>
           </argument>
         </arguments>

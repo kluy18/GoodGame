@@ -65,20 +65,20 @@ if vspeed &gt; 10 {
 }
 
 if keyboard_check(vk_left) {
-    hspeed -= 1.5;
+    hspeed -= 1;
 }
 
 if keyboard_check(vk_right) {
-    hspeed += 1.5;
+    hspeed += 1;
 }
 
 // Max Speed
-if hspeed &gt; 4.5 {
-    hspeed = 4.5;
+if hspeed &gt; 3 {
+    hspeed = 3;
 }
 
-if hspeed &lt; -4.5 {
-    hspeed = -4.5;
+if hspeed &lt; -3 {
+    hspeed = -3;
 }
 
 // Friction

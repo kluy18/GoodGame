@@ -52,11 +52,6 @@ wjLeft = false
             <kind>1</kind>
             <string>// Movement
 
-if keyboard_check(vk_left) and keyboard_check(vk_right)
-    {
-    hspeed = 0
-}
-
 if vspeed &gt; 10 {
     vspeed = 10;
 }

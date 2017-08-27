@@ -52,6 +52,11 @@ wjLeft = false
             <kind>1</kind>
             <string>// Movement
 
+if keyboard_check(vk_left) and keyboard_check(vk_right)
+    {
+    hspeed = 0
+}
+
 if vspeed &gt; 10 {
     vspeed = 10;
 }
@@ -143,7 +148,7 @@ else
 
 if wjRight = true
     {
-    if keyboard_check(vk_up) and keyboard_check(vk_right)
+    if keyboard_check(vk_up) and keyboard_check(vk_right) and !keyboard_check(vk_left)
         {
         vspeed = -11
         hspeed = 4
@@ -152,7 +157,7 @@ if wjRight = true
 
 if wjLeft = true
     {
-    if keyboard_check(vk_up) and keyboard_check(vk_left)
+    if keyboard_check(vk_up) and keyboard_check(vk_left) and !keyboard_check(vk_right)
         {
         vspeed = -11
         hspeed = -4

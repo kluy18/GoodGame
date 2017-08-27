@@ -12,6 +12,7 @@
     <sprite>sprites\spr_ground</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_goo</sprite>
+    <sprite>sprites\spr_spikes</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -20,6 +21,7 @@
     <object>objects\obj_ground</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_goo</object>
+    <object>objects\obj_spikes</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room04</room>

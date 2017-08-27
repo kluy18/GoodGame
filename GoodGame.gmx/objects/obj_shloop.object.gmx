@@ -52,6 +52,14 @@ wjLeft = false
             <kind>1</kind>
             <string>// Movement
 
+if place_meeting(x,y+1,obj_ground)
+    {
+    if keyboard_check(vk_left) and keyboard_check(vk_right)
+        {
+        hspeed = 0
+    }
+}
+
 if vspeed &gt; 10 {
     vspeed = 10;
 }
@@ -107,7 +115,7 @@ if keyboard_check(vk_space) or keyboard_check(vk_up)
     if place_meeting(x,y + 1, obj_ground)
     {
         {
-        vspeed = -13
+        vspeed = -10
     }
 }
 
@@ -145,7 +153,7 @@ if wjRight = true
     {
     if keyboard_check(vk_up) and keyboard_check(vk_right) and !keyboard_check(vk_left)
         {
-        vspeed = -11
+        vspeed = -8
         hspeed = 4
     }
 }
@@ -154,7 +162,7 @@ if wjLeft = true
     {
     if keyboard_check(vk_up) and keyboard_check(vk_left) and !keyboard_check(vk_right)
         {
-        vspeed = -11
+        vspeed = -8
         hspeed = -4
     }
 }

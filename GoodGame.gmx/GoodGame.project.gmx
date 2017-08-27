@@ -4,11 +4,14 @@
     <Config>Configs\Configs</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_blorp</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_shloop</sprite>
     <sprite>sprites\spr_ground</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_goo</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -16,6 +19,7 @@
     <object>objects\obj_shloop</object>
     <object>objects\obj_ground</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_goo</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room04</room>
